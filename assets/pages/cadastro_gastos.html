@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinFieldTech - Cadastrar Gastos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet'>
+    <!-- chamada da CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body-cadastro-gasto">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+        <div class="container-fluid">
+            <img src="../imagens/logo.png" class="img-fluid" alt="FinFieldTech">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro_usuario.html">Cadastre-se</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Recebimentos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cadastro_recebimentos.html">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="#">Alterar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Gastos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cadastro_gastos.html">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="#">Alterar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="estatistica.html">Estatística</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                    <button class="button-return">
+                        <spam class="fa-solid fa-person-walking-arrow-loop-left fa-fade fa-lg" style="color: #00e0ff;"
+                            onclick="history.go(-1)"></spam>
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#menuLateral">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <main class="main">
+        <div class="container-form">
+            <form class="form-tamanho-aviso">
+                <h1 class="h-1">NAVEGUE PELO MENU</h1>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>&copy; Todos os Direitos Reservados - RM99307 - 2023</p>
+        </div>
+    </main>
+
+    <script src="/assets/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
