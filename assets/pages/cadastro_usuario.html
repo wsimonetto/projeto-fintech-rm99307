@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                        <a class="nav-link" href="home.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="cadastro_usuario.html">Cadastre-se</a>
@@ -38,7 +38,7 @@
                             Recebimentos
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="cadastro_recebimentos.html">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="./cadastro_recebimentos.html">Cadastrar</a></li>
                             <li><a class="dropdown-item" href="#">Alterar</a></li>
                         </ul>
                     </li>
@@ -48,15 +48,15 @@
                             Gastos
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="cadastro_gastos.html">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="./cadastro_gastos.html">Cadastrar</a></li>
                             <li><a class="dropdown-item" href="#">Alterar</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="estatistica.html">Estatística</a>
+                        <a class="nav-link" aria-current="page" href="./estatistica.html">Estatística</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
+                        <a class="nav-link" href="./login.html">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Logout</a>
@@ -74,62 +74,69 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <main class="main">
-        <div class="container-form">
-            <form class="form-tamanho">
-                <div class="mb-1">
-                    <label class="form-label">CPF *</label>
-                    <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
-                </div>
-                <div class="mb-1">
-                    <label class="form-label">Nome Completo *</label>
-                    <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
-                </div>
-                <div class="mb-1">
-                    <label for="exampleFormControlInput1" class="form-label">E-mail *</label>
-                    <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1">
-                </div>
-                <div>
-                    <label for="exampleInputPassword1" class="form-label">CEP</label>
-                </div>
-                <div class="mb-1 div-cep">
-                    <input class="form-control form-control-sm input-cep" type="text" aria-label=".form-control-sm">
-                    <button class="button-link-buscar" type="submit">Buscar</button>
-                </div>
-                <div class="mb-1">
-                    <label class="form-label">Logradouro</label>
-                    <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
-                </div>
-                <div>
-                    <label class="form-label input-name">Número</label>
-                    <label class="form-label">Complemento</label>
-                </div>
-                <div class="mb-1 div-cep">
-                    <input class="form-control form-control-sm input-cep" type="text" aria-label=".form-control-sm">
-                    <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
-                </div>
-                <div class="mb-1">
-                    <label for="exampleInputPassword1" class="form-label">Senha (mín. 8 e máx. 12 caracteres) *</label>
-                    <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
-                </div>
-                <div class="mb-2">
-                    <label for="exampleInputPassword1" class="form-label">Repita a Senha *</label>
-                    <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
-                </div>
-                <div class="mb-1">
-                    <button class="button-link-cadastrar" type="submit">Cadastrar</button>
-                </div>
-                <div class="mb-1 div-cep">
-                    <label class="form-label astesitico-adj">*</label>
-                    <label class="form-label label-adj">Campos Obrigatórios</label>
-                </div>
-            </form>
-        </div>
+    <div class="container-form">
+        <form class="form-tamanho">
+            <div class="mb-2">
+                <label class="form-label">CPF</label>
+                <i class="fa-solid fa-8 icon3"></i>
+                <input class="form-control form-control-sm" type="text" placeholder="Ex: 0000000000" required>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Nome</label>
+                <i class="fa-regular fa-user icon1"></i>
+                <input class="form-control form-control-sm" type="text" placeholder="Ex: Fulano de Tal" required>
+            </div>
+            <div class="mb-2">
+                <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+                <i class="fa-regular fa-envelope icon2"></i>
+                <input type="email" class="form-control form-control-sm" id="email" placeholder="Ex: email@email.com">
+            </div>
+            <div class="mb-2">
+                <label for="exampleInputPassword1" class="form-label">CEP</label>
+                <i class="fa-regular fa-keyboard icon3"></i>
+                <input class="form-control form-control-sm" type="text" placeholder="Ex: 00000-000 ou Clique Buscar">
+            </div>
+            <div class="mb-2">
+                <button class="button-link-buscar">Buscar</button>
+            </div>
+            <div class="mb-1">
+                <label for="logradouro" class="form-label">Logradouro</label>
+                <i class="fa-regular fa-address-book icon4"></i>
+                <input class="form-control form-control-sm" type="text" id="logradouro"
+                    placeholder="Ex: Rua dos Fintechs">
+            </div>
+            <div class="mb-1">
+                <label for="numero" class="form-label input-name">Número</label>
+                <i class="fa-solid fa-8 icon5"></i>
+                <input class="form-control form-control-sm input-cep" type="number" id="numero" placeholder="Ex: 0000"
+                    min="0">
+            </div>
+            <div class="mb-1">
+                <label for="complemento" class="form-label">Complemento</label>
+                <i class="fa-regular fa-keyboard icon6"></i>
+                <input class="form-control form-control-sm" type="text" id="complemento" placeholder="Ex: Campo livre">
+            </div>
+            <div class="mb-1">
+                <label for="senha" class="form-label">Senha</label>
+                <i class="fa-solid fa-key icon7"></i>
+                <input type="password" class="form-control form-control-sm" id="senha"
+                    placeholder="Ex: mín. 8 caract. máx. 12. Aa9@#" required>
+            </div>
+            <div class="mb-1">
+                <label for="senha-confirma" class="form-label">Repita a Senha</label>
+                <i class="fa-solid fa-key icon8"></i>
+                <input type="password" class="form-control form-control-sm" id="senha-confirma"
+                    placeholder="Ex: repita a senha digitada acima" required>
+            </div>
+            <div class="mb-1 button-cadastrar">
+                <button class="button-link-cadastrar" type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
 
-        <div class="footer-home">
-            <p>&copy; Todos os Direitos Reservados - RM99307 - 2023</p>
-        </div>
-    </main>
+    <div class="footer-cadastro">
+        <p>&copy; Todos os Direitos Reservados - RM99307 - 2023</p>
+    </div>
 
     <script src="/assets/js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
